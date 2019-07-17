@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -69,6 +69,11 @@
 		7180986C22D5FD8900AC452B /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7180983122D5FD8900AC452B /* HomeTableViewCell.swift */; };
 		7180986D22D5FD8900AC452B /* DashboardOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7180983222D5FD8900AC452B /* DashboardOptionTableViewCell.xib */; };
 		7180986E22D5FD8900AC452B /* DashboardOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7180983322D5FD8900AC452B /* DashboardOptionTableViewCell.swift */; };
+		71A0EC6222DF02F700881273 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A0EC6122DF02F700881273 /* NetworkManager.swift */; };
+		71A0EC6622DF338900881273 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A0EC6522DF338900881273 /* Request.swift */; };
+		71E102F822D7636C00CC82CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71E102F622D7636C00CC82CA /* Localizable.strings */; };
+		71E102F922D7636C00CC82CA /* AppSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71E102F722D7636C00CC82CA /* AppSettings.plist */; };
+		71E102FD22D763AD00CC82CA /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E102FC22D763AD00CC82CA /* DictionaryExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +142,11 @@
 		7180983122D5FD8900AC452B /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		7180983222D5FD8900AC452B /* DashboardOptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardOptionTableViewCell.xib; sourceTree = "<group>"; };
 		7180983322D5FD8900AC452B /* DashboardOptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardOptionTableViewCell.swift; sourceTree = "<group>"; };
+		71A0EC6122DF02F700881273 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		71A0EC6522DF338900881273 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		71E102F622D7636C00CC82CA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		71E102F722D7636C00CC82CA /* AppSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppSettings.plist; sourceTree = "<group>"; };
+		71E102FC22D763AD00CC82CA /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		87F8613C1E05EEF20A1D0F83 /* Pods-CVCreator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVCreator.release.xcconfig"; path = "Target Support Files/Pods-CVCreator/Pods-CVCreator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +189,8 @@
 				7180981B22D5FD8900AC452B /* Controller */,
 				718097FB22D5FD8900AC452B /* Helper */,
 				718097F222D5FD8900AC452B /* Model */,
+				71E102E022D761D900CC82CA /* NetworkManager */,
+				71E102F522D7636C00CC82CA /* Resources */,
 				718097E422D5FD8900AC452B /* StoryBoard */,
 				718097E922D5FD8900AC452B /* ViewModel */,
 				718097D922D5FD6800AC452B /* Assets.xcassets */,
@@ -246,6 +258,7 @@
 		718097FD22D5FD8900AC452B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				71E102FC22D763AD00CC82CA /* DictionaryExtensions.swift */,
 				718097FE22D5FD8900AC452B /* CVTextView.swift */,
 				718097FF22D5FD8900AC452B /* UIColorExtension.swift */,
 				7180980022D5FD8900AC452B /* StringExtensions.swift */,
@@ -391,6 +404,24 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		71E102E022D761D900CC82CA /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				71A0EC6122DF02F700881273 /* NetworkManager.swift */,
+				71A0EC6522DF338900881273 /* Request.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		71E102F522D7636C00CC82CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71E102F622D7636C00CC82CA /* Localizable.strings */,
+				71E102F722D7636C00CC82CA /* AppSettings.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C4BC08187BA3125761B47D16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,7 +436,6 @@
 				0ABB35FFFEFB1D94858ADF3C /* Pods-CVCreator.debug.xcconfig */,
 				87F8613C1E05EEF20A1D0F83 /* Pods-CVCreator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -482,10 +512,12 @@
 				7180985D22D5FD8900AC452B /* Roboto-BlackItalic.ttf in Resources */,
 				7180984F22D5FD8900AC452B /* Roboto-Light.ttf in Resources */,
 				7180985122D5FD8900AC452B /* RobotoCondensed-Light.ttf in Resources */,
+				71E102F822D7636C00CC82CA /* Localizable.strings in Resources */,
 				718097DA22D5FD6800AC452B /* Assets.xcassets in Resources */,
 				7180985A22D5FD8900AC452B /* Roboto-BoldItalic.ttf in Resources */,
 				7180986D22D5FD8900AC452B /* DashboardOptionTableViewCell.xib in Resources */,
 				7180985F22D5FD8900AC452B /* Roboto-Thin.ttf in Resources */,
+				71E102F922D7636C00CC82CA /* AppSettings.plist in Resources */,
 				7180985B22D5FD8900AC452B /* Roboto-LightItalic.ttf in Resources */,
 				7180985522D5FD8900AC452B /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				7180985822D5FD8900AC452B /* Roboto-ThinItalic.ttf in Resources */,
@@ -553,6 +585,7 @@
 				7180984A22D5FD8900AC452B /* UIViewExtension.swift in Sources */,
 				7180983D22D5FD8900AC452B /* CompanyDetailViewModel.swift in Sources */,
 				7180984B22D5FD8900AC452B /* CVTextField.swift in Sources */,
+				71E102FD22D763AD00CC82CA /* DictionaryExtensions.swift in Sources */,
 				7180984C22D5FD8900AC452B /* DateExtensions.swift in Sources */,
 				718097D322D5FD6800AC452B /* AppDelegate.swift in Sources */,
 				7180984722D5FD8900AC452B /* UIColorExtension.swift in Sources */,
@@ -571,6 +604,7 @@
 				7180986822D5FD8900AC452B /* DashboardViewController.swift in Sources */,
 				7180986222D5FD8900AC452B /* HomeViewController.swift in Sources */,
 				7180984922D5FD8900AC452B /* CGFloatExtension.swift in Sources */,
+				71A0EC6622DF338900881273 /* Request.swift in Sources */,
 				7180983C22D5FD8900AC452B /* PersonalInfoViewModel.swift in Sources */,
 				7180983A22D5FD8900AC452B /* TopicOfKnowladgeViewModel.swift in Sources */,
 				7180986122D5FD8900AC452B /*  Utility.swift in Sources */,
@@ -579,6 +613,7 @@
 				7180983E22D5FD8900AC452B /* ProjectModel.swift in Sources */,
 				7180983622D5FD8900AC452B /* EducationViewModel.swift in Sources */,
 				7180983822D5FD8900AC452B /* HomeViewModel.swift in Sources */,
+				71A0EC6222DF02F700881273 /* NetworkManager.swift in Sources */,
 				7180983922D5FD8900AC452B /* AdditionalInformationViewModel.swift in Sources */,
 				7180983B22D5FD8900AC452B /* DashboardViewModel.swift in Sources */,
 				7180984022D5FD8900AC452B /* TopicOfKnowladgeModel.swift in Sources */,
@@ -730,6 +765,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CVCreator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -748,6 +784,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CVCreator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

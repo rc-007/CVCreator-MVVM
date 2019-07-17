@@ -46,4 +46,32 @@ struct ProjectModel: Codable {
             self.description2 = value
         }
     }
+    
+    func getParameterDict() -> [String:String] {
+        return["project1": project1,
+               "project2":project2,
+               "technology1":technology1,
+               "technology2":technology2,
+               "duration1":duration1,
+               "duration2":duration2,
+               "description1":description1,
+               "description2":description2
+        ]
+    }
+    
+    
+    func saveParameterDict(dict : [String: Any]) -> ProjectModel {
+        var model = ProjectModel()
+        model.project1 = dict["project1"] as! String
+        model.project2 = dict["project2"]  as! String
+        model.technology1 = dict["technology1"] as! String
+        model.technology2 = dict["technology2"] as! String
+        model.duration1 = dict["duration1"] as! String
+        model.duration2 = dict["duration2"] as! String
+        model.description1 = dict["description1"] as! String
+        model.description2 = dict["description2"] as! String
+        return model
+    }
+    
+  
 }

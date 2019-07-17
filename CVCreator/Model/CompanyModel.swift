@@ -33,4 +33,25 @@ struct CompanyModel: Codable {
             self.achievements = value
         }
     }
+    
+    
+    func getParameterDict() -> [String:String] {
+        return[
+            "companyName": companyName,
+            "designation":designation,
+            "experience": experience,
+            "achievements":achievements
+        ]
+    }
+    
+    func saveParameterDict(dict : [String: Any]) -> CompanyModel {
+        var model = CompanyModel()
+        model.companyName = dict["companyName"] as! String
+        model.designation = dict["designation"]  as! String
+        model.experience = dict["experience"] as! String
+        model.achievements = dict["achievements"]  as! String
+      
+        return model
+    }
+    
 }

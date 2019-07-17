@@ -43,4 +43,45 @@ struct TopicOfKnowladgeViewModel {
         knowledge4 = topicModel.knowledge4
         knowledge5 = topicModel.knowledge5
     }
+    
+    func getExperience1() -> String {
+        return !kAppSettingManager.topicModel.experience1.isEmpty ? kAppSettingManager.topicModel.experience1 : experience1
+    }
+    
+    func getExperience2() -> String {
+        return !kAppSettingManager.topicModel.experience2.isEmpty ? kAppSettingManager.topicModel.experience2 : experience2
+    }
+    
+    func getExperience3() -> String {
+        return !kAppSettingManager.topicModel.experience3.isEmpty ? kAppSettingManager.topicModel.experience3 : experience3
+    }
+    
+    func getExperienc4() -> String {
+        return !kAppSettingManager.topicModel.experience4.isEmpty ? kAppSettingManager.topicModel.experience4 : experience4
+    }
+    
+    func getExperience5() -> String {
+        return !kAppSettingManager.topicModel.experience5.isEmpty ? kAppSettingManager.topicModel.experience5 : experience5
+    }
+    
+    
+    func getKnowladge1() -> String {
+        return !kAppSettingManager.topicModel.knowledge1.isEmpty ? kAppSettingManager.topicModel.knowledge1 : knowledge1
+    }
+    
+    func getKnowladge2() -> String {
+        return !kAppSettingManager.topicModel.knowledge2.isEmpty ? kAppSettingManager.topicModel.knowledge2 : knowledge2
+    }
+    
+    func getKnowladge3() -> String {
+        return !kAppSettingManager.topicModel.knowledge3.isEmpty ? kAppSettingManager.topicModel.knowledge3 : knowledge3
+    }
+    
+    func getKnowladge4() -> String {
+        return !kAppSettingManager.topicModel.knowledge4.isEmpty ? kAppSettingManager.topicModel.knowledge4 : knowledge4
+    }
+    
+    func getKnowladge5() -> String {
+        return !kAppSettingManager.topicModel.knowledge5.isEmpty ? kAppSettingManager.topicModel.knowledge5 : knowledge5
+    }
 }

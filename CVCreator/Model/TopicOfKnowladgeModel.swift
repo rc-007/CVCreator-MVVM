@@ -62,4 +62,41 @@ struct TopicOfKnowladgeModel : Codable {
         
         }
     }
+   
+    func getParameterDict() -> [String:String] {
+        return[
+            "knowledge1": knowledge1,
+            "experience1":experience1,
+            
+            "knowledge2": knowledge2,
+            "experience2":experience2,
+           
+            "knowledge3": knowledge3,
+            "experience3":experience3,
+            
+            "knowledge4": knowledge4,
+            "experience4":experience4,
+            
+            "knowledge5": knowledge5,
+            "experience5":experience5
+        ]
+    }
+    
+    
+    func saveParameterDict(dict : [String: Any]) -> TopicOfKnowladgeModel {
+        var model = TopicOfKnowladgeModel()
+        model.knowledge1 = dict["knowledge1"] as! String
+        model.experience1 = dict["experience1"]  as! String
+        model.knowledge2 = dict["knowledge2"] as! String
+        model.experience2 = dict["experience2"]  as! String
+        model.knowledge3 = dict["knowledge3"] as! String
+        model.experience3 = dict["experience3"]  as! String
+        model.knowledge4 = dict["knowledge4"] as! String
+        model.experience4 = dict["experience4"]  as! String
+        model.knowledge5 = dict["knowledge5"] as! String
+        model.experience5 = dict["experience5"]  as! String
+        return model
+    }
+    
+    
 }

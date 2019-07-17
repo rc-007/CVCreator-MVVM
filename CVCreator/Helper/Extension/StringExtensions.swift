@@ -586,3 +586,16 @@ extension String {
         return nil
     }
 }
+// MARK: - Methods
+extension Data {
+    
+    /// SwifterSwift: String by encoding Data using the given encoding (if applicable).
+    ///
+    /// - Parameter encoding: encoding.
+    /// - Returns: String by encoding Data using the given encoding (if applicable).
+    public func string(encoding: String.Encoding) -> String? {
+        return String(data: self, encoding: encoding)
+    }
+    
+}
+

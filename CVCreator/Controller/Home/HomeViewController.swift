@@ -20,14 +20,17 @@ class HomeViewController: BaseViewController {
         initializeSetup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // fetching opitons data
+        homeViewModel.loadOption()
+    }
+    
     // MARK:- User Defined
     fileprivate func initializeSetup() {
         // Setting Navigation Bar
         
         setNavigationTitle(TextValues.home)
-        
-        // fetching opitons data
-        homeViewModel.loadOption()
     }
 }
 
@@ -55,12 +58,19 @@ extension HomeViewController: UITableViewDataSource {
     }
 }
 
-
 extension HomeViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: SegueIdentifier.dashboard, sender: nil)
+        switch indexPath.row {
+        case 0:
+            // Fetching data from document directory
+            homeViewModel.loadingDataFromDocumentDirectory()
+            
+            performSegue(withIdentifier: SegueIdentifier.dashboard, sender: nil)
+        default:
+            homeViewModel.saveDataInDirectory()
+        }
     }
 }
 

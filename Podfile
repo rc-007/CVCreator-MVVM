@@ -8,5 +8,7 @@ target 'CVCreator' do
   # Pods for CVCreator
 
   pod 'IQKeyboardManager', '6.2.1'
-
+  pod 'AFNetworking'
+  pod 'ALAlertBanner'
+  
 end

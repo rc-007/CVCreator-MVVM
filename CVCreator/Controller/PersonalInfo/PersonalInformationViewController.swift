@@ -116,12 +116,12 @@ extension PersonalInformationViewController: PickerProtocol{
 extension PersonalInformationViewController {
     
     private func updateTextFields() {
-        firstName.text = infoViewModel?.firstName ?? ""
-        lastName.text = infoViewModel?.lastName ?? ""
-        emailId.text = infoViewModel?.emailId ?? ""
-        phoneNumner.text = infoViewModel?.phoneNumber ?? ""
-        addressLine1.text = infoViewModel?.address1 ?? ""
-        addressLine2.text = infoViewModel?.address2 ?? ""
-        dateOfBirth.text = infoViewModel?.dob ?? ""
+        firstName.text = infoViewModel?.getFirstName()
+        lastName.text = infoViewModel?.getLastName()
+        emailId.text = infoViewModel?.getEmail()
+        phoneNumner.text = infoViewModel?.getPhoneNumber()
+        addressLine1.text = infoViewModel?.getAddress1()
+        addressLine2.text = infoViewModel?.getAddress2()
+        dateOfBirth.text = infoViewModel?.getDOB()
     }
 }

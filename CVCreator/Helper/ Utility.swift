@@ -51,4 +51,12 @@ class Utility: NSObject {
         }
         return nil
     }
+    
+    public func getDocumentsDirectory() -> URL {
+        //Retrive data from local disk
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let filename = paths[0].appendingPathComponent("Resume.txt")
+        return filename
+    }
+        
 }

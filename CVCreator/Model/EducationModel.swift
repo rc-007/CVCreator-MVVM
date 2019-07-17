@@ -34,4 +34,24 @@ struct EducationModel : Codable {
             self.toDate = value
         }
     }
+    
+    func getParameterDict() -> [String:String] {
+        return[
+            "universityName": universityName,
+            "courseName":courseName,
+            "fromDate":fromDate,
+            "toDate":toDate
+        ]
+    }
+    
+    
+    func saveParameterDict(dict : [String: Any]) -> EducationModel {
+        var model = EducationModel()
+        model.universityName = dict["universityName"] as! String
+        model.courseName = dict["courseName"]  as! String
+        model.fromDate = dict["fromDate"] as! String
+        model.toDate = dict["toDate"]  as! String
+        
+        return model
+    }
 }

@@ -23,4 +23,18 @@ struct AdditionalInformationModel: Codable {
             self.detail = value
         }
     }
+    
+    func getParameterDict() -> [String:String] {
+        return[
+            "detail": detail
+          ]
+    }
+    
+    func saveParameterDict(dict : [String: Any]) -> AdditionalInformationModel {
+        var model = AdditionalInformationModel()
+      
+        model.detail = dict["detail"]  as! String
+        
+        return model
+    }
 }

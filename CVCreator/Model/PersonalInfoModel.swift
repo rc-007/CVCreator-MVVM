@@ -49,4 +49,40 @@ struct PersonalInfoModel: Codable {
             
         }
     }
+    
+    mutating func setModelData(data :PersonalInfoModel)
+    {
+        self.firstName = data.firstName
+        self.lastName = data.lastName
+        self.phoneNumber = data.phoneNumber
+        self.emailId = data.emailId
+        self.address2 = data.address2
+        self.address1 = data.address1
+        self.dob = data.dob
+    }
+    
+    func getParameterDict() -> [String:String] {
+        return["firstName": firstName,
+               "lastName":lastName,
+               "phoneNumber":phoneNumber,
+               "emailId":emailId,
+               "address1":address1,
+               "address2":address2,
+               "dob":dob
+        ]
+    }
+    
+    func saveParameterDict(dict : [String: Any]) -> PersonalInfoModel {
+        var model = PersonalInfoModel()
+        model.firstName = dict["firstName"] as! String
+        model.lastName = dict["lastName"]  as! String
+        model.phoneNumber = dict["phoneNumber"] as! String
+        model.emailId = dict["emailId"] as! String
+        model.address1 = dict["address1"] as! String
+        model.address2 = dict["address2"] as! String
+        model.dob = dict["dob"] as! String
+        return model
+    }
+    
+    
 }

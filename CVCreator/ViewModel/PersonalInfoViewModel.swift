@@ -41,4 +41,32 @@ struct PersonalInfoViewModel {
         self.selectedDate = date
     }
     
+    func getFirstName() -> String {
+        return !kAppSettingManager.personalInfoModel.firstName.isEmpty ? kAppSettingManager.personalInfoModel.firstName : firstName
+    }
+    
+    func getLastName() -> String {
+        return !kAppSettingManager.personalInfoModel.lastName.isEmpty ? kAppSettingManager.personalInfoModel.lastName : lastName
+    }
+    
+    func getPhoneNumber() -> String {
+        return !kAppSettingManager.personalInfoModel.phoneNumber.isEmpty ? kAppSettingManager.personalInfoModel.phoneNumber : phoneNumber
+    }
+    
+    func getEmail() -> String {
+        return !kAppSettingManager.personalInfoModel.emailId.isEmpty ? kAppSettingManager.personalInfoModel.emailId : emailId
+    }
+    
+    func getAddress1() -> String {
+        return !kAppSettingManager.personalInfoModel.address1.isEmpty ? kAppSettingManager.personalInfoModel.address1 : address1
+    }
+    
+    func getAddress2() -> String {
+        return !kAppSettingManager.personalInfoModel.address2.isEmpty ? kAppSettingManager.personalInfoModel.address2 : address2
+    }
+    
+    func getDOB() -> String {
+        return !kAppSettingManager.personalInfoModel.dob.isEmpty ? kAppSettingManager.personalInfoModel.dob : dob
+    }
+    
 }
