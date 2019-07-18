@@ -38,22 +38,4 @@ struct EducationViewModel {
     mutating func setFromSelectedDate(date: Date) {
         self.fromSelectedDate = date
     }
-    
-    
-    func getUniversityText() -> String {
-        return !kAppSettingManager.educationModel.universityName.isEmpty ? kAppSettingManager.educationModel.universityName : universityName
-    }
-    
-    func getCourseName() -> String {
-        return !kAppSettingManager.educationModel.courseName.isEmpty ? kAppSettingManager.educationModel.courseName : courseName
-    }
-    
-    func getFromDate() -> String {
-        return !kAppSettingManager.educationModel.fromDate.isEmpty ? kAppSettingManager.educationModel.fromDate : fromDate
-    }
-    
-    func getToDate() -> String {
-        return !kAppSettingManager.educationModel.toDate.isEmpty ? kAppSettingManager.educationModel.toDate : toDate
-    }
-
 }

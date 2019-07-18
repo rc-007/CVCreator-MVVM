@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CVCreator/ViewModel/HomeViewModel.swift"
-            timestampString = "585070129.49781"
+            timestampString = "585075354.541008"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CVCreator/NetworkManager/Request.swift"
-            timestampString = "585070129.498414"
+            timestampString = "585073391.668466"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "110"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CVCreator/NetworkManager/Request.swift"
-            timestampString = "585070129.498473"
+            timestampString = "585073391.668527"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CVCreator/NetworkManager/Request.swift"
-            timestampString = "585070129.498523"
+            timestampString = "585073391.668578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CVCreator/NetworkManager/Request.swift"
-            timestampString = "585070129.498579"
+            timestampString = "585073391.668625"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CVCreator/NetworkManager/NetworkManager.swift"
-            timestampString = "585070129.498642"
+            timestampString = "585073391.668673"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -137,77 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CVCreator/ViewModel/HomeViewModel.swift"
-            timestampString = "585070129.498692"
+            filePath = "CVCreator/Controller/PersonalInfo/PersonalInformationViewController.swift"
+            timestampString = "585121471.251361"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "saveDataInDirectory()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CVCreator/ViewModel/HomeViewModel.swift"
-            timestampString = "585070129.499227"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "saveDataInDirectory()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CVCreator.HomeViewModel.saveDataInDirectory() -&gt; ()"
-                  moduleName = "CVCreator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rahul.chouhan/Desktop/Third/CVCreator-Master/CVCreator/ViewModel/HomeViewModel.swift"
-                  timestampString = "585070001.924052"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "74">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;) -&gt; () in CVCreator.HomeViewModel.saveDataInDirectory() -&gt; ()"
-                  moduleName = "CVCreator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rahul.chouhan/Desktop/Third/CVCreator-Master/CVCreator/ViewModel/HomeViewModel.swift"
-                  timestampString = "585070001.926875"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "97">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CVCreator/Model/PersonalInfoModel.swift"
-            timestampString = "585070129.499752"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "setValueWithTextField(key:value:)"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "updateTextFields()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -218,13 +154,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CVCreator/ViewModel/PersonalInfoViewModel.swift"
-            timestampString = "585070129.499806"
+            timestampString = "585073391.668759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "getFirstName()"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "updateProperties()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CVCreatorTests/PersonalInformationViewControllerTests.swift"
+            timestampString = "585121471.251434"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "testSetAndGetResumeDataDictionary()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CVCreatorTests/UtilityTests.swift"
+            timestampString = "585121471.251497"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

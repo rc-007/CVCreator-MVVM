@@ -71,10 +71,21 @@
 		7180986E22D5FD8900AC452B /* DashboardOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7180983322D5FD8900AC452B /* DashboardOptionTableViewCell.swift */; };
 		71A0EC6222DF02F700881273 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A0EC6122DF02F700881273 /* NetworkManager.swift */; };
 		71A0EC6622DF338900881273 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A0EC6522DF338900881273 /* Request.swift */; };
-		71E102F822D7636C00CC82CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71E102F622D7636C00CC82CA /* Localizable.strings */; };
-		71E102F922D7636C00CC82CA /* AppSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71E102F722D7636C00CC82CA /* AppSettings.plist */; };
+		71A0EC7622DF83E700881273 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A0EC7522DF83E700881273 /* HomeViewControllerTests.swift */; };
+		71D3562822E0310B00A0C873 /* PersonalInformationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3562722E0310B00A0C873 /* PersonalInformationViewControllerTests.swift */; };
+		71D3562A22E03E5D00A0C873 /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3562922E03E5D00A0C873 /* UtilityTests.swift */; };
 		71E102FD22D763AD00CC82CA /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E102FC22D763AD00CC82CA /* DictionaryExtensions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71A0EC7022DF805F00881273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 718097C722D5FD6800AC452B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718097CE22D5FD6800AC452B;
+			remoteInfo = CVCreator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0ABB35FFFEFB1D94858ADF3C /* Pods-CVCreator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVCreator.debug.xcconfig"; path = "Target Support Files/Pods-CVCreator/Pods-CVCreator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,8 +155,11 @@
 		7180983322D5FD8900AC452B /* DashboardOptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardOptionTableViewCell.swift; sourceTree = "<group>"; };
 		71A0EC6122DF02F700881273 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		71A0EC6522DF338900881273 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		71E102F622D7636C00CC82CA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		71E102F722D7636C00CC82CA /* AppSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppSettings.plist; sourceTree = "<group>"; };
+		71A0EC6B22DF805F00881273 /* CVCreatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVCreatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A0EC6F22DF805F00881273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71A0EC7522DF83E700881273 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		71D3562722E0310B00A0C873 /* PersonalInformationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformationViewControllerTests.swift; sourceTree = "<group>"; };
+		71D3562922E03E5D00A0C873 /* UtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTests.swift; sourceTree = "<group>"; };
 		71E102FC22D763AD00CC82CA /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		87F8613C1E05EEF20A1D0F83 /* Pods-CVCreator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVCreator.release.xcconfig"; path = "Target Support Files/Pods-CVCreator/Pods-CVCreator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +173,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71A0EC6822DF805F00881273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -166,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				718097D122D5FD6800AC452B /* CVCreator */,
+				71A0EC6C22DF805F00881273 /* CVCreatorTests */,
 				718097D022D5FD6800AC452B /* Products */,
 				FD4841F2F446F1116BF8E887 /* Pods */,
 				C4BC08187BA3125761B47D16 /* Frameworks */,
@@ -176,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				718097CF22D5FD6800AC452B /* CVCreator.app */,
+				71A0EC6B22DF805F00881273 /* CVCreatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,7 +213,6 @@
 				718097FB22D5FD8900AC452B /* Helper */,
 				718097F222D5FD8900AC452B /* Model */,
 				71E102E022D761D900CC82CA /* NetworkManager */,
-				71E102F522D7636C00CC82CA /* Resources */,
 				718097E422D5FD8900AC452B /* StoryBoard */,
 				718097E922D5FD8900AC452B /* ViewModel */,
 				718097D922D5FD6800AC452B /* Assets.xcassets */,
@@ -404,6 +426,17 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		71A0EC6C22DF805F00881273 /* CVCreatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				71A0EC6F22DF805F00881273 /* Info.plist */,
+				71A0EC7522DF83E700881273 /* HomeViewControllerTests.swift */,
+				71D3562722E0310B00A0C873 /* PersonalInformationViewControllerTests.swift */,
+				71D3562922E03E5D00A0C873 /* UtilityTests.swift */,
+			);
+			path = CVCreatorTests;
+			sourceTree = "<group>";
+		};
 		71E102E022D761D900CC82CA /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,15 +444,6 @@
 				71A0EC6522DF338900881273 /* Request.swift */,
 			);
 			path = NetworkManager;
-			sourceTree = "<group>";
-		};
-		71E102F522D7636C00CC82CA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				71E102F622D7636C00CC82CA /* Localizable.strings */,
-				71E102F722D7636C00CC82CA /* AppSettings.plist */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		C4BC08187BA3125761B47D16 /* Frameworks */ = {
@@ -461,6 +485,24 @@
 			productReference = 718097CF22D5FD6800AC452B /* CVCreator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		71A0EC6A22DF805F00881273 /* CVCreatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71A0EC7222DF805F00881273 /* Build configuration list for PBXNativeTarget "CVCreatorTests" */;
+			buildPhases = (
+				71A0EC6722DF805F00881273 /* Sources */,
+				71A0EC6822DF805F00881273 /* Frameworks */,
+				71A0EC6922DF805F00881273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71A0EC7122DF805F00881273 /* PBXTargetDependency */,
+			);
+			name = CVCreatorTests;
+			productName = CVCreatorTests;
+			productReference = 71A0EC6B22DF805F00881273 /* CVCreatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -473,6 +515,10 @@
 				TargetAttributes = {
 					718097CE22D5FD6800AC452B = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					71A0EC6A22DF805F00881273 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 718097CE22D5FD6800AC452B;
 					};
 				};
 			};
@@ -490,6 +536,7 @@
 			projectRoot = "";
 			targets = (
 				718097CE22D5FD6800AC452B /* CVCreator */,
+				71A0EC6A22DF805F00881273 /* CVCreatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -512,18 +559,23 @@
 				7180985D22D5FD8900AC452B /* Roboto-BlackItalic.ttf in Resources */,
 				7180984F22D5FD8900AC452B /* Roboto-Light.ttf in Resources */,
 				7180985122D5FD8900AC452B /* RobotoCondensed-Light.ttf in Resources */,
-				71E102F822D7636C00CC82CA /* Localizable.strings in Resources */,
 				718097DA22D5FD6800AC452B /* Assets.xcassets in Resources */,
 				7180985A22D5FD8900AC452B /* Roboto-BoldItalic.ttf in Resources */,
 				7180986D22D5FD8900AC452B /* DashboardOptionTableViewCell.xib in Resources */,
 				7180985F22D5FD8900AC452B /* Roboto-Thin.ttf in Resources */,
-				71E102F922D7636C00CC82CA /* AppSettings.plist in Resources */,
 				7180985B22D5FD8900AC452B /* Roboto-LightItalic.ttf in Resources */,
 				7180985522D5FD8900AC452B /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				7180985822D5FD8900AC452B /* Roboto-ThinItalic.ttf in Resources */,
 				7180985322D5FD8900AC452B /* Roboto-MediumItalic.ttf in Resources */,
 				7180983422D5FD8900AC452B /* LaunchScreen.storyboard in Resources */,
 				7180985422D5FD8900AC452B /* RobotoCondensed-Italic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A0EC6922DF805F00881273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +672,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71A0EC6722DF805F00881273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D3562A22E03E5D00A0C873 /* UtilityTests.swift in Sources */,
+				71A0EC7622DF83E700881273 /* HomeViewControllerTests.swift in Sources */,
+				71D3562822E0310B00A0C873 /* PersonalInformationViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71A0EC7122DF805F00881273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718097CE22D5FD6800AC452B /* CVCreator */;
+			targetProxy = 71A0EC7022DF805F00881273 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		718097E522D5FD8900AC452B /* LaunchScreen.storyboard */ = {
@@ -796,6 +866,44 @@
 			};
 			name = Release;
 		};
+		71A0EC7322DF805F00881273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CVCreatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.CVCreatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CVCreator.app/CVCreator";
+			};
+			name = Debug;
+		};
+		71A0EC7422DF805F00881273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CVCreatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.CVCreatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CVCreator.app/CVCreator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -813,6 +921,15 @@
 			buildConfigurations = (
 				718097E222D5FD6800AC452B /* Debug */,
 				718097E322D5FD6800AC452B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71A0EC7222DF805F00881273 /* Build configuration list for PBXNativeTarget "CVCreatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71A0EC7322DF805F00881273 /* Debug */,
+				71A0EC7422DF805F00881273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

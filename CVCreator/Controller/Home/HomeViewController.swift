@@ -12,6 +12,7 @@ import UIKit
 class HomeViewController: BaseViewController {
 
     @IBOutlet var homeViewModel: HomeViewModel!
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK:- View Life Cycle
     override func viewDidLoad() {

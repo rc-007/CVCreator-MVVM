@@ -29,21 +29,4 @@ struct CompanyDetailViewModel {
         achievements = companyModel.achievements
     }
     
-    func getCompanyName() -> String {
-        return !kAppSettingManager.companyModel.companyName.isEmpty ? kAppSettingManager.companyModel.companyName : companyName
-    }
-    
-    func getDesignation() -> String {
-        return !kAppSettingManager.companyModel.designation.isEmpty ? kAppSettingManager.companyModel.designation : designation
-    }
-    
-    func getExperience() -> String {
-        return !kAppSettingManager.companyModel.experience.isEmpty ? kAppSettingManager.companyModel.experience : experience
-    }
-    
-    func getAchievements() -> String {
-        return !kAppSettingManager.companyModel.achievements.isEmpty ? kAppSettingManager.companyModel.achievements : achievements
-    }
-    
-    
 }

@@ -23,9 +23,5 @@ struct AdditionalInformationViewModel {
     private mutating func updateProperties() {
         detail = infoModel.detail
     }
- 
-    func getDetail() -> String {
-        return !kAppSettingManager.additionalInfoModel.detail.isEmpty ? kAppSettingManager.additionalInfoModel.detail : detail
-    }
 
 }

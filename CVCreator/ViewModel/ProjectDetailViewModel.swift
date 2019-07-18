@@ -41,39 +41,6 @@ struct ProjectDetailViewModel {
         description2 = projectModel.description2
         
     }
-    
-    func getProject1Text() -> String {
-        return !kAppSettingManager.projectModel.project1.isEmpty ? kAppSettingManager.projectModel.project1 : project1
-    }
-    
-    func getProject2Text() -> String {
-        return !kAppSettingManager.projectModel.project2.isEmpty ? kAppSettingManager.projectModel.project2 : project2
-    }
-    
-    func getTechnology1Text() -> String {
-        return !kAppSettingManager.projectModel.technology1.isEmpty ? kAppSettingManager.projectModel.technology1 : technology1
-    }
-    
-    func getTechnology2Text() -> String {
-        return !kAppSettingManager.projectModel.technology2.isEmpty ? kAppSettingManager.projectModel.technology2 : technology2
-    }
-    
-    func getDuration1Text() -> String {
-        return !kAppSettingManager.projectModel.duration1.isEmpty ? kAppSettingManager.projectModel.duration1 : duration1
-    }
-    
-    func getDuration2Text() -> String {
-        return !kAppSettingManager.projectModel.duration2.isEmpty ? kAppSettingManager.projectModel.duration2 : duration2
-    }
-    
-    func getDescription1Text() -> String {
-        return !kAppSettingManager.projectModel.description1.isEmpty ? kAppSettingManager.projectModel.description1 : description1
-    }
-    
-    func getDescription2Text() -> String {
-        return !kAppSettingManager.projectModel.description2.isEmpty ? kAppSettingManager.projectModel.description2 : description2
-    }
 
-    
 }
 

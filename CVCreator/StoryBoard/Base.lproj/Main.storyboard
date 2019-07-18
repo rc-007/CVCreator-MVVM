@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -83,6 +82,7 @@
                     <navigationItem key="navigationItem" title="CV Creator" id="OiK-GE-QTp"/>
                     <connections>
                         <outlet property="homeViewModel" destination="wz3-kE-InO" id="CC9-Tt-Z1U"/>
+                        <outlet property="tableView" destination="JeK-Vm-sfd" id="x8C-lp-cLW"/>
                         <segue destination="Y15-9S-J7N" kind="show" identifier="segueDashboard" id="S0d-wB-frI"/>
                     </connections>
                 </viewController>
